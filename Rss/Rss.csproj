@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A27B497-3255-4BF1-BFF2-2688E8D6FC62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RssExtractor.Rss</RootNamespace>
+    <AssemblyName>Rss</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Core" />
+    <Reference Include="IvanAkcheurov.NTextCat.Lib">
+      <HintPath>..\IvanAkcheurov.NTextCat.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="IvanAkcheurov.Commons">
+      <HintPath>..\IvanAkcheurov.Commons.dll</HintPath>
+    </Reference>
+    <Reference Include="IvanAkcheurov.NClassify">
+      <HintPath>..\IvanAkcheurov.NClassify.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Feed.cs" />
+    <Compile Include="News.cs" />
+    <Compile Include="IFeedSelector.cs" />
+    <Compile Include="IFeed.cs" />
+    <Compile Include="FeedCollection.cs" />
+    <Compile Include="IModule.cs" />
+    <Compile Include="LinearFeedSelector.cs" />
+    <Compile Include="ContentDownloadModule.cs" />
+    <Compile Include="INews.cs" />
+    <Compile Include="LanguageRecognitionModule.cs" />
+    <Compile Include="FolderLocatorModule.cs" />
+    <Compile Include="Extractor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Util\Util.csproj">
+      <Project>{4F895AD1-09DB-4841-A1B5-0DA9246EB2EC}</Project>
+      <Name>Util</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Downloader\Downloader.csproj">
+      <Project>{312A6993-AE4B-44D5-B121-D2BD70F2FD3C}</Project>
+      <Name>Downloader</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Core14.profile.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Gettext-ScanForTranslations>false</Gettext-ScanForTranslations>
+    </None>
+  </ItemGroup>
+</Project>

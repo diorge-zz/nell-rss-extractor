@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssExtractor", "RssExtractor\RssExtractor.csproj", "{F2E70C6A-02F9-41F0-8072-F5FC6BC51B5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Downloader", "Downloader\Downloader.csproj", "{312A6993-AE4B-44D5-B121-D2BD70F2FD3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rss", "Rss\Rss.csproj", "{2A27B497-3255-4BF1-BFF2-2688E8D6FC62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util", "Util\Util.csproj", "{4F895AD1-09DB-4841-A1B5-0DA9246EB2EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{578382E5-8374-4058-AC65-8C4558B4121D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{25FAFEC8-9CD2-4FE3-A5AD-E996931743A0}"
+	ProjectSection(SolutionItems) = preProject
+		IvanAkcheurov.NTextCat.Lib.dll = IvanAkcheurov.NTextCat.Lib.dll
+		IvanAkcheurov.Commons.dll = IvanAkcheurov.Commons.dll
+		IvanAkcheurov.NClassify.dll = IvanAkcheurov.NClassify.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+		Default|Any CPU = Default|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A27B497-3255-4BF1-BFF2-2688E8D6FC62}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A27B497-3255-4BF1-BFF2-2688E8D6FC62}.Debug|x86.Build.0 = Debug|Any CPU
+		{2A27B497-3255-4BF1-BFF2-2688E8D6FC62}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A27B497-3255-4BF1-BFF2-2688E8D6FC62}.Release|x86.Build.0 = Release|Any CPU
+		{312A6993-AE4B-44D5-B121-D2BD70F2FD3C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{312A6993-AE4B-44D5-B121-D2BD70F2FD3C}.Debug|x86.Build.0 = Debug|Any CPU
+		{312A6993-AE4B-44D5-B121-D2BD70F2FD3C}.Release|x86.ActiveCfg = Release|Any CPU
+		{312A6993-AE4B-44D5-B121-D2BD70F2FD3C}.Release|x86.Build.0 = Release|Any CPU
+		{4F895AD1-09DB-4841-A1B5-0DA9246EB2EC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F895AD1-09DB-4841-A1B5-0DA9246EB2EC}.Debug|x86.Build.0 = Debug|Any CPU
+		{4F895AD1-09DB-4841-A1B5-0DA9246EB2EC}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F895AD1-09DB-4841-A1B5-0DA9246EB2EC}.Release|x86.Build.0 = Release|Any CPU
+		{578382E5-8374-4058-AC65-8C4558B4121D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{578382E5-8374-4058-AC65-8C4558B4121D}.Debug|x86.Build.0 = Debug|Any CPU
+		{578382E5-8374-4058-AC65-8C4558B4121D}.Default|Any CPU.ActiveCfg = Debug|Any CPU
+		{578382E5-8374-4058-AC65-8C4558B4121D}.Default|Any CPU.Build.0 = Debug|Any CPU
+		{578382E5-8374-4058-AC65-8C4558B4121D}.Release|x86.ActiveCfg = Release|Any CPU
+		{578382E5-8374-4058-AC65-8C4558B4121D}.Release|x86.Build.0 = Release|Any CPU
+		{F2E70C6A-02F9-41F0-8072-F5FC6BC51B5F}.Debug|x86.ActiveCfg = Debug|x86
+		{F2E70C6A-02F9-41F0-8072-F5FC6BC51B5F}.Debug|x86.Build.0 = Debug|x86
+		{F2E70C6A-02F9-41F0-8072-F5FC6BC51B5F}.Release|x86.ActiveCfg = Release|x86
+		{F2E70C6A-02F9-41F0-8072-F5FC6BC51B5F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = RssExtractor\RssExtractor.csproj
+	EndGlobalSection
+EndGlobal
