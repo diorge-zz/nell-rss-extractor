@@ -39,6 +39,7 @@
     <Compile Include="IAsyncDownloadRequest.cs" />
     <Compile Include="IDownloadRequest.cs" />
     <Compile Include="DownloadRequest.cs" />
+    <Compile Include="DownloadClient.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
