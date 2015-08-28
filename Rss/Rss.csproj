@@ -34,13 +34,19 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Core" />
     <Reference Include="IvanAkcheurov.NTextCat.Lib">
-      <HintPath>..\IvanAkcheurov.NTextCat.Lib.dll</HintPath>
-    </Reference>
-    <Reference Include="IvanAkcheurov.Commons">
-      <HintPath>..\IvanAkcheurov.Commons.dll</HintPath>
+      <HintPath>..\Libraries\IvanAkcheurov.NTextCat.Lib.dll</HintPath>
     </Reference>
     <Reference Include="IvanAkcheurov.NClassify">
-      <HintPath>..\IvanAkcheurov.NClassify.dll</HintPath>
+      <HintPath>..\Libraries\IvanAkcheurov.NClassify.dll</HintPath>
+    </Reference>
+    <Reference Include="boilerpipe-1.2.0">
+      <HintPath>..\Libraries\boilerpipe-1.2.0.exe</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core">
+      <HintPath>..\Libraries\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API">
+      <HintPath>..\Libraries\IKVM.OpenJDK.XML.API.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -57,6 +63,7 @@
     <Compile Include="LanguageRecognitionModule.cs" />
     <Compile Include="FolderLocatorModule.cs" />
     <Compile Include="Extractor.cs" />
+    <Compile Include="BoilerpipeModule.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -72,7 +79,7 @@
   <ItemGroup>
     <None Include="Core14.profile.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Gettext-ScanForTranslations>false</Gettext-ScanForTranslations>
+      <Gettext-ScanForTranslations>False</Gettext-ScanForTranslations>
     </None>
   </ItemGroup>
 </Project>

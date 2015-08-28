@@ -11,6 +11,7 @@ namespace RssExtractor {
 
 			var modules = new IModule[] {
 				new ContentDownloadModule(),
+				new BoilerpipeModule(),
 				new LanguageRecognitionModule(),
 				new FolderLocatorModule(),
 				new DebugModule()
@@ -37,6 +38,7 @@ namespace RssExtractor {
 				Console.WriteLine(news.Address);
 				Console.WriteLine(news.Data.GetOrDefault<string>("Language"));
 				Console.WriteLine(news.Content.Length);
+				Console.WriteLine(news.Content);
 				Console.WriteLine("--------");
 			}
 
