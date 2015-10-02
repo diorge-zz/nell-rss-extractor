@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using RssExtractor.Downloader;
+using System.Threading.Tasks;
 
 namespace RssExtractor.Rss {
 
@@ -21,11 +22,11 @@ namespace RssExtractor.Rss {
 				var req = new DownloadRequest(feed.GetUri());
 				feed.SetContent(req.Download());
 
-				foreach (var news in feed.GetNews()) {
-					foreach (var module in modules) {
+				Parallel.ForEach(feed.GetNews(), news => {
+					foreach(var module in modules) {
 						module.Apply(news);
 					}
-				}
+				});
 			}
 		}
 
